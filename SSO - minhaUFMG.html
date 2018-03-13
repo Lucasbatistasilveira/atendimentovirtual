@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+	<link rel="stylesheet" type="text/css" href="SSO%20-%20minhaUFMG_arquivos/idp.css" media="all">
+
+	<script type="text/javascript" async="" src="SSO%20-%20minhaUFMG_arquivos/ga.js"></script>
+	<script language="javascript" charset="ISO-8859-1" type="text/javascript" src="SSO%20-%20minhaUFMG_arquivos/idp.js"></script>
+	<title>SSO - minhaUFMG</title>
+</head>
+
+<body onload="loginFieldFocus()">
+	<div id="box">
+		<form name="loginForm" action="j_security_check" method="post" onsubmit="return validateFormOnSubmit()">
+			<div id="box_links">
+				<ul>
+					<li>
+						<a target="_blank" href="https://sistemas.ufmg.br/termos-de-uso">Termos de uso dos recursos de TI da UFMG.</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.grude.ufmg.br/gerus/Portal.nsf/frNovoUsuario?OpenForm">Novo usu�rio? Veja como acessar a minhaUFMG.</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://www.grude.ufmg.br/gerus/Registro.nsf/frRegInicIdUsuario?OpenForm&amp;2">Se voc� esqueceu sua senha, recupere-a.</a>
+					</li>
+				</ul>
+
+			</div>
+
+			<div id="box_dots">
+				<img src="SSO%20-%20minhaUFMG_arquivos/dots.gif" alt="Pontos" width="5" height="1">
+			</div>
+
+			<div id="box_login">
+				<div id="box_login_title">Login</div>
+				<div id="box_login_fields">
+					<p>
+						<label for="j_username">
+							<img src="SSO%20-%20minhaUFMG_arquivos/usuario.gif" alt="Usuario" width="94" height="18">
+						</label>
+					</p>
+					<p>
+						<input name="j_username" id="j_username" size="14" maxlength="50" class="box_login_field" autocapitalize="off" value="lucasbatista"
+						 type="text">
+					</p>
+					<p>
+						<label for="j_password">
+							<img src="SSO%20-%20minhaUFMG_arquivos/senha.gif" alt="Senha" width="94" height="18">
+						</label>
+					</p>
+					<div id="box_login_capslock" class="box_login_capslock" style="display:none">Capslock ligado!</div>
+					<p>
+						<input name="j_password" id="j_password" size="14" maxlength="50" class="box_login_field" onkeypress="checkCapsLock(event)"
+						 onchange="captchaFieldFocus()" autocapitalize="off" type="password">
+					</p>
+					<div id="box_login_submit">
+						<input name="submit" id="submit" value="Entrar" class="box_login_submit" type="submit">
+					</div>
+				</div>
+			</div>
+			<div id="box_warning">
+				&nbsp; &nbsp;
+			</div>
+
+
+			<div id="box_message">
+				<div id="box_message_title">Aviso</div>
+				<div id="box_message_text">
+					<p>
+						<img src="SSO%20-%20minhaUFMG_arquivos/novo.gif" border="0">Prezado(a) Calouro(a) de Gradua��o,
+						<br>
+						<br>A sua folha de NIPs (N�meros de Identifica��o Pessoal) j� est� dispon�vel. Basta acessar o endere�o eletr�nico: https://sistemas.ufmg.br/nip
+						e utilizar o seu CPF e a senha provis�ria criada no seu cadastro inicial na UFMG.</p>
+				</div>
+			</div>
+
+		</form>
+	</div>
+	<script>
+		document.getElementById("j_username").setAttribute('autocapitalize', 'off');
+		document.getElementById("j_password").setAttribute('autocapitalize', 'off');
+	</script>
+	<script type="text/javascript" src="SSO%20-%20minhaUFMG_arquivos/injectga.js"></script>
+</body>
+
+</html>
